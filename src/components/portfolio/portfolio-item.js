@@ -7,7 +7,8 @@ export default function(props) {
             <h3>{props.title}</h3>
             <h4>{props.url}</h4>
 
-            <Link to={`/portfolio/${props.slug}`}>Link</Link> 
+            <Link to={`/portfolio/${props.slug}`}>Link</Link>
+            {/* <img src={props.img} alt="banner" /> */}
         </div>
     );
 }
