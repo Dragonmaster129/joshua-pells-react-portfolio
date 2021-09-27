@@ -1,0 +1,14 @@
+.DraftEditor-root {
+  border: 2px solid $dark-teal;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.rdw-editor-toolbar {
+  border: 2px solid $dark-teal;
+  border-radius: 5px;
+
+  & > div > div {
+    border: 2px solid $charcoal;
+  }
+}
