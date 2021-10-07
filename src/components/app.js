@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavigationContainer from "./navigation/navigation-container";
 import Home from "./pages/home";
 import About from "./pages/about";
+import Contact from "./pages/contact";
 import Blog from "./pages/blog";
 import BlogDetail from "./pages/blog-detail";
 import PortfolioManager from "./pages/portfolio-manager";
@@ -110,6 +111,7 @@ export default class App extends Component {
               />
 
               <Route path="/about-me" component={About} />
+              <Route path="/contact" component={Contact} />
 
               <Route
                 path="/blog"
@@ -133,7 +135,7 @@ export default class App extends Component {
               <Route
                 exact
                 path="/portfolio/:slug"
-                component={PortfolioDetail}
+                render={(props) => <PortfolioDetail {...props} />}
               />
               <Route component={NoMatch} />
             </Switch>
