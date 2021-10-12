@@ -118,8 +118,8 @@ export default class Blog extends Component {
     const blogRecords = this.state.blogItems.map((blogItem) => {
       if (this.props.loggedInStatus === "LOGGED_IN") {
         return (
-          <div className="admin-blog-wrapper">
-            <BlogItem key={blogItem.id} blogItem={blogItem} />
+          <div className="admin-blog-wrapper" key={blogItem.id}>
+            <BlogItem blogItem={blogItem} />
             <a onClick={() => this.handleDeleteClick(blogItem)}>
               <FontAwesomeIcon icon="trash-alt" />
             </a>
